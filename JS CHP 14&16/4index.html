@@ -1,0 +1,57 @@
+<!-- // Create a new array. Store values one by one in such a way
+// that you can access the values in the order in which they
+// were stored. (FIFO-First In First Out) -->
+<!-- 
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>FIFO Example</title>
+// </head>
+// <body>
+
+// <script>
+    // Initialize an empty array for FIFO
+    let fifoQueue = [];
+
+    // Function to add an element to the queue
+    function enqueue(value) {
+        fifoQueue.push(value);
+        displayQueue();
+    }
+
+    // Function to remove and return the first element from the queue
+    function dequeue() {
+        if (fifoQueue.length > 0) {
+            const removedValue = fifoQueue.shift();
+            displayQueue();
+            return removedValue;
+        } else {
+            alert("Queue is empty!");
+            return null;
+        }
+    }
+
+    // Function to display the current state of the queue
+    function displayQueue() {
+        document.write("<h3>Current Queue:</h3>");
+        document.write("<ul>");
+        fifoQueue.forEach(function(item) {
+            document.write("<li>" + item + "</li>");
+        });
+        document.write("</ul>");
+    }
+
+    // Example usage
+    enqueue("First");
+    enqueue("Second");
+    enqueue("Third");
+
+    // Dequeue an element
+    dequeue();
+// </script>
+
+// </body>
+// </html>
+ -->

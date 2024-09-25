@@ -1,0 +1,89 @@
+<!-- // Initialize an array with color names. Display the array
+// elements in your browser.
+// a. Ask the user what color he/she wants to add to the
+// beginning & add that color to the beginning of the array.
+// Display the updated array in your browser.
+// b. Ask the user what color he/she wants to add to the end
+// & add that color to the end of the array. Display the
+// updated array in your browser.
+// c. Add two more color to the beginning of the array.
+// Display the updated array in your browser.
+// d. Delete the first color in the array. Display the updated
+// array in your browser.
+// e. Delete the last color in the array. Display the updated
+// array in your browser.
+// f. Ask the user at which index he/she wants to add a color
+// & color name. Then add the color to desired
+// position/index. . Display the updated array in your
+// browser.
+// g. Ask the user at which index he/she wants to delete
+// color(s) & how many colors he/she wants to delete. Thenremove the same number of color(s) from user-defined
+// position/index. . Display the updated array in your
+// browser.  -->
+
+
+<!-- // <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Color Array Manipulation</title>
+// </head>
+// <body>
+
+// <script>
+    // Initialize an array with color names
+    let colors = ["Red", "Green", "Blue", "Yellow"];
+    
+    // Function to display the array
+    function displayColors() {
+        document.write("<h3>Current Colors:</h3>");
+        document.write("<ul>");
+        colors.forEach(function(color) {
+            document.write("<li>" + color + "</li>");
+        });
+        document.write("</ul>");
+    }
+
+    // Display initial colors
+    displayColors();
+
+    // a. Add a color to the beginning
+    let newColorBeginning = prompt("What color do you want to add to the beginning?");
+    colors.unshift(newColorBeginning);
+    displayColors();
+
+    // b. Add a color to the end
+    let newColorEnd = prompt("What color do you want to add to the end?");
+    colors.push(newColorEnd);
+    displayColors();
+
+    // c. Add two more colors to the beginning
+    colors.unshift(prompt("Enter the first color to add to the beginning:"));
+    colors.unshift(prompt("Enter the second color to add to the beginning:"));
+    displayColors();
+
+    // d. Delete the first color
+    colors.shift();
+    displayColors();
+
+    // e. Delete the last color
+    colors.pop();
+    displayColors();
+
+    // f. Add a color at a specific index
+    let indexToAdd = parseInt(prompt("At which index do you want to add a color?"));
+    let colorToAdd = prompt("Enter the color name to add:");
+    colors.splice(indexToAdd, 0, colorToAdd);
+    displayColors();
+
+    // g. Delete colors from a specific index
+    let indexToDelete = parseInt(prompt("At which index do you want to delete color(s)?"));
+    let numToDelete = parseInt(prompt("How many colors do you want to delete?"));
+    colors.splice(indexToDelete, numToDelete);
+    displayColors();
+
+// </script>
+
+// </body>
+// </html> -->
