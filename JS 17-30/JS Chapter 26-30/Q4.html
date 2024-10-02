@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Simulator</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; text-align: center; }
+        button { margin-top: 10px; }
+        h2 { font-size: 2em; }
+    </style>
+</head>
+<body>
+
+    <h1>Dice Simulator</h1>
+    <button onclick="rollDice()">Roll the Dice</button>
+
+    <h2 id="diceValue">Dice Value: </h2>
+
+    <script>
+        function rollDice() {
+            const diceRoll = Math.floor(Math.random() * 6) + 1; // Generates a number between 1 and 6
+            document.getElementById('diceValue').innerText = `Dice Value: ${diceRoll}`;
+        }
+    </script>
+
+</body>
+</html>

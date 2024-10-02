@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Input</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; text-align: center; }
+        input, button { margin-top: 10px; }
+        h2 { font-size: 2em; }
+    </style>
+</head>
+<body>
+
+    <h1>Weight Input</h1>
+    <label for="weightInput">Enter your weight:</label>
+    <input type="text" id="weightInput" required>
+    <button onclick="displayWeight()">Submit</button>
+
+    <h2 id="weightDisplay">Weight: </h2>
+
+    <script>
+        function displayWeight() {
+            const weightInput = document.getElementById('weightInput').value;
+            const weight = parseFloat(weightInput);
+
+            if (isNaN(weight)) {
+                document.getElementById('weightDisplay').innerText = "Please enter a valid weight.";
+            } else {
+                document.getElementById('weightDisplay').innerText = `Weight: ${weight} kg`;
+            }
+        }
+    </script>
+
+</body>
+</html>

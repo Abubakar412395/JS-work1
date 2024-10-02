@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Username Validation</title>
+</head>
+<body>
+
+<script>
+   
+    function isValidUsername(username) {
+        const specialChars = ['@', '.', '!', ','];
+        return !specialChars.some(char => username.includes(char));
+    }
+
+
+    let username;
+    do {
+        username = prompt("Enter a username:");
+        if (!isValidUsername(username)) {
+            alert("Invalid username! Please enter a valid username without special characters [@, ., !, ,].");
+        }
+    } while (!isValidUsername(username));
+    
+   
+    alert(`Your username is: ${username}`);
+</script>
+
+</body>
+</html>

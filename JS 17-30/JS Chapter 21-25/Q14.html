@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search in Array</title>
+</head>
+<body>
+
+<script>
+
+    const A = ["cake", "apple pie", "cookie", "chips", "patties"];
+    
+
+    const userInput = prompt("Enter the item you want to search for:");
+    
+
+    const found = A.some(item => item.toLowerCase() === userInput.toLowerCase());
+
+    if (found) {
+        alert(`${userInput} is found in the list.`);
+    } else {
+        alert(`${userInput} is not found in the list.`);
+    }
+</script>
+
+</body>
+</html>

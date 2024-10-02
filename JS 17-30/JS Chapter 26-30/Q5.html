@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Toss Simulator</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; text-align: center; }
+        button { margin-top: 10px; }
+        h2 { font-size: 2em; }
+    </style>
+</head>
+<body>
+
+    <h1>Coin Toss Simulator</h1>
+    <button onclick="tossCoin()">Toss the Coin</button>
+
+    <h2 id="coinValue">Result: </h2>
+
+    <script>
+        function tossCoin() {
+            const result = Math.random() < 0.5 ? 'Heads' : 'Tails'; // Randomly select Heads or Tails
+            document.getElementById('coinValue').innerText = `Result: ${result}`;
+        }
+    </script>
+
+</body>
+</html>

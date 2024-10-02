@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Operations</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        input, button { margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <h1>Number Operations</h1>
+    <label for="numberInput">Enter a positive integer:</label>
+    <input type="number" id="numberInput" min="1" required>
+    <button onclick="displayValues()">Submit</button>
+
+    <h2>Results:</h2>
+    <p id="results"></p>
+
+    <script>
+        function displayValues() {
+            const numberInput = document.getElementById('numberInput').value;
+            const number = parseFloat(numberInput);
+
+            if (isNaN(number) || number <= 0) {
+                document.getElementById('results').innerText = "Please enter a valid positive integer.";
+                return;
+            }
+
+            const roundedValue = Math.round(number);
+            const floorValue = Math.floor(number);
+            const ceilValue = Math.ceil(number);
+
+            document.getElementById('results').innerHTML = `
+                <strong>Number:</strong> ${number} <br>
+                <strong>Rounded Value:</strong> ${roundedValue} <br>
+                <strong>Floor Value:</strong> ${floorValue} <br>
+                <strong>Ceiling Value:</strong> ${ceilValue}
+            `;
+        }
+    </script>
+
+</body>
+</html>
