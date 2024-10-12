@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypotenuse Calculator</title>
+</head>
+<body>
+    <h1>Hypotenuse Calculator</h1>
+    <button onclick="calculateHypotenuse()">Calculate Hypotenuse</button>
+    <div id="result"></div>
+
+    <script>
+        function calculateHypotenuse() {
+            const base = parseFloat(prompt("Enter the length of the base:"));
+            const perpendicular = parseFloat(prompt("Enter the length of the perpendicular:"));
+
+            // Inner function to calculate the square
+            function calculateSquare(value) {
+                return value * value;
+            }
+
+            const hypotenuse = Math.sqrt(calculateSquare(base) + calculateSquare(perpendicular));
+            document.getElementById('result').textContent = `The hypotenuse is: ${hypotenuse}`;
+        }
+    </script>
+</body>
+</html>

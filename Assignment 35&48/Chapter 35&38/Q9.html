@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle Area Calculator</title>
+</head>
+<body>
+    <h1>Area of a Rectangle</h1>
+    <button onclick="calculateAreaWithValues(5, 10)">Calculate Area (Values)</button>
+    <button onclick="calculateAreaWithVariables()">Calculate Area (Variables)</button>
+    <div id="result"></div>
+
+    <script>
+  
+        function calculateAreaWithValues(width, height) {
+            const area = width * height;
+            document.getElementById('result').textContent = `Area (using values): ${area}`;
+        }
+
+   
+        function calculateAreaWithVariables() {
+            const width = parseFloat(prompt("Enter the width:"));
+            const height = parseFloat(prompt("Enter the height:"));
+            const area = width * height;
+            document.getElementById('result').textContent = `Area (using variables): ${area}`;
+        }
+    </script>
+</body>
+</html>

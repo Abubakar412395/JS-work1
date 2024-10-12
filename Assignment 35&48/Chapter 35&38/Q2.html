@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting User</title>
+</head>
+<body>
+    <h1>Greeting Example</h1>
+    <div id="greeting"></div>
+
+    <script>
+        function greetUser(firstName, lastName) {
+            const fullName = `${firstName} ${lastName}`;
+            return `Hello, ${fullName}!`;
+        }
+
+        
+        const greetingMessage = greetUser("John", "Doe");
+        document.getElementById('greeting').textContent = greetingMessage;
+    </script>
+</body>
+</html>

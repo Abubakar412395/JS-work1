@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting Example</title>
+</head>
+<body>
+    <h1>Counting from Start to End</h1>
+    <button onclick="countNumbers()">Start Counting</button>
+    <div id="result"></div>
+
+    <script>
+        function countNumbers() {
+            const start = parseInt(prompt("Enter the start number:"));
+            const end = parseInt(prompt("Enter the end number:"));
+            let counting = '';
+
+            for (let i = start; i <= end; i++) {
+                counting += i + ' ';
+            }
+
+            document.getElementById('result').textContent = `Counting: ${counting}`;
+        }
+    </script>
+</body>
+</html>

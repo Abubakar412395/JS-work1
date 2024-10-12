@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Two Numbers</title>
+</head>
+<body>
+    <h1>Add Two Numbers</h1>
+    <button onclick="addNumbers()">Add Numbers</button>
+    <div id="result"></div>
+
+    <script>
+        function addNumbers() {
+            const num1 = parseFloat(prompt("Enter the first number:"));
+            const num2 = parseFloat(prompt("Enter the second number:"));
+            const sum = num1 + num2;
+            document.getElementById('result').textContent = `The sum is: ${sum}`;
+        }
+    </script>
+</body>
+</html>
