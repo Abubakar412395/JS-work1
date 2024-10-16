@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Mouseover Example</title>
+    <style>
+        img {
+            width: 300px; 
+            height: auto; 
+            transition: opacity 0.3s; 
+        }
+    </style>
+    <script>
+        function changeImage(image) {
+            image.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvfdqqbDbaTxzbCg2i487TrwpBmjliCtswfw&s'; 
+        }
+
+        function revertImage(image) {
+            image.src = 'https://images.javatpoint.com/top10-technologies/images/top-10-mobile-companies-in-india6.png'; 
+        }
+    </script>
+</head>
+<body>
+
+<h2>Hover Over the Image</h2>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7gMV8pR3m6vRlZo3rEcR7zxxIOF_M-15cavLb9B71LBxynb3R99M-gvvYuJNqQimjFu0&usqp=CAU" 
+     alt="Original Image" 
+     onmouseover="changeImage(this);" 
+     onmouseout="revertImage(this);">
+
+</body>
+</html>
